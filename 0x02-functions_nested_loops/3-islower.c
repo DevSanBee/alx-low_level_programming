@@ -2,15 +2,14 @@
 
 /**
  * _islower - Entry point
- *
+ * @c: Value tou be provided
  * Return: nothing
  */
 
 int _islower(int c)
 {
-	if (c < 'z')
-		return(1);
+	if (c > 'a' && c < 'z')
+		return (1);
 	else
-		return(0);
-	
+		return (0);
 }
