@@ -15,10 +15,10 @@ int main(void)
 	f[1] = 2;
 	printf("%ld, %ld, ", f[0], f[1]);
 
-	for (i = 2; i < 98; i++)
+	for (i = 2; i < 85; i++)
 	{
 		f[i] = f[i - 1] + f[i - 2];
-		if (i == 97)
+		if (i == 86)
 			printf("%ld\n", f[i]);
 		else
 			printf("%ld, ", f[i]);
