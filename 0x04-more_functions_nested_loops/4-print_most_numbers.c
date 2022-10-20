@@ -5,9 +5,9 @@
  */
 void print_most_numbers(void)
 {
-	char d;
+	int d;
 
-	for (d = 48; d <= 57; d++)
+	for (d = 0; d <= 9; d++)
 	{
 		if (d != 2 && d != 4)
 			_putchar(d);
