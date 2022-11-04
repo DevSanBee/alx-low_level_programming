@@ -1,21 +1,18 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * main - the actuall function
- * @argc: the arguments count
- * @argv: the arguments vector
- * Return: 0 everry success
+ * main - multiplies two numbers.
+ * @argc: number of command line arguments.
+ * @argv: array that contains the program command line arguments.
+ * Return: 0 - success.
  */
 int main(int argc, char *argv[])
 {
-	int sum;
-
-	if (argc < 2)
+	if (argc != 3)
 	{
 		printf("Error\n");
 		return (1);
 	}
-	sum = (atoi(argv[1]) * atoi(argv[2]));
-	printf("%d\n", sum);
+	printf("%d\n", atoi(argv[1]) * atoi(argv[2]));
 	return (0);
 }
