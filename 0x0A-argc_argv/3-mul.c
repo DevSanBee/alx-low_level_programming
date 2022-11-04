@@ -11,8 +11,11 @@ int main(int argc, char *argv[])
 	int sum;
 
 	if (argc < 2)
+	{
 		printf("Error\n");
-	sum = (atoi(argv[-1]) + atoi(argv[-2]));
+		return (1);
+	}
+	sum = (atoi(argv[-1]) * atoi(argv[-2]));
 	printf("%d\n", sum);
 	return (0);
 }
