@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "function_pointers.h"
 /**
  * print_name - the function to be run the program
  * @name: one of the parameters
