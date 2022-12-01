@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include "lists.h"
 
 /**
@@ -9,7 +8,7 @@
  */
 size_t print_listint(const listint_t *h)
 {
-	size_t nodes = 0;
+	size_t nnodes = 0;
 
 	while (h != NULL)
 	{
@@ -17,5 +16,5 @@ size_t print_listint(const listint_t *h)
 		h = h->next;
 		nnodes++;
 	}
-	return (nodes);
+	return (nnodes);
 }
